@@ -1,0 +1,24 @@
+SFML
+g++ a.cpp -o a -lsfml-graphics -lsfml-window -lsfml-system
+
+Foreach
+g++ -std=gnu++11 foreach.cpp -o foreach
+
+Regex
+g++ -std=gnu++11 regex.cpp -o regex -lboost_regex
+
+Vector
+g++ vector.cpp -o vector
+
+Matrix
+g++ -std=c++11 matrix.cpp -o matrix
+
+Spirit
+g++ -std=c++14 spirit-sum.cpp -o spirit-sum
+g++ -std=c++14 spirit-roman.cpp -o spirit-roman
+
+STD Pointers
+g++ -std=c++11 ptr.cpp -o ptr
+
+Shared Pointer
+g++ -std=c++11 shared_ptr.cpp -o shared_ptr

@@ -1,0 +1,8 @@
+Full version:
+g++ -std=c++11 Source.cpp ball.h ball.cpp entity.h game_state.h main_game.h main_game.cpp main_menu.h main_menu.cpp paddle_player.h paddle_player.cpp score.h score.cpp -o a -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+
+Stripped down version:
+g++ -std=c++11 Source.cpp ball.cpp entity.h game_state.h main_game.cpp main_menu.cpp paddle_player.cpp score.cpp -o a -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+
+If Error while running program:
+export LD_LIBRARY_PATH=/usr/local/lib

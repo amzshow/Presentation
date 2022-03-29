@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <boost/regex.hpp>
+
+int main()
+{
+
+	std::string result;
+try {
+  std::regex re("Name: (.*)");
+  std::smatch match;
+  if (std::regex_search(subject, match, re) && match.size() > 1) {
+    result = match.str(1);
+  } else{
+	result = std::string("");
+	  } 
+	} catch (std::regex_error& e) {
+	  // Syntax error in the regular expression
+	}
+
+	return 0;
+
+}
